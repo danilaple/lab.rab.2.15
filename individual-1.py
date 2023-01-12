@@ -6,11 +6,9 @@
 
 if __name__ == "__main__":
 
-    file = open('input.txt', 'r')
-    print(file.read().replace('0', 'ноль').replace('1', 
+    with open('input.txt', 'r') as file:
+        file.read().replace('0', 'ноль').replace('1', 
         'один').replace('2', 'два').replace('3', 'три').replace('4', 
         'четыре').replace('5', 'пять').replace('6', 'шесть').replace('7',
-        'семь').replace('8', 'восемь').replace('9', 'девять'))
-    file.close()
-
+        'семь').replace('8', 'восемь').replace('9', 'девять')
 
